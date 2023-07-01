@@ -31,6 +31,23 @@ for example:- If you want to show the list of names in a UI for that if we are u
 3. It fixes whats broken and also updates old API's.<br>
 
 
+**Why is it called compose?**
+
+old Android UI System follows the inheritance approach.
+
+<img width="769" alt="Screenshot 2023-07-01 at 11 01 03 PM" src="https://github.com/Vijaya9418/jetpack_compose/assets/56352158/dbe3fdc9-53b5-4ae2-aaa5-4c704f89554a">
+
+which means in above example a view is a parent of textview and textview is a parent of editText, and view is a grand parent of editText. but in old UI approach their is no system that the same editText can inherit from both textview and view, becuase it doesn't support multiple inheritance.
+
+new Android UI System follows composition approach.
+
+<img width="639" alt="Screenshot 2023-07-01 at 11 04 57 PM" src="https://github.com/Vijaya9418/jetpack_compose/assets/56352158/df06c093-0250-432d-88bf-aa76ef5a3bec">
+
+In this approach, a composable can have child composable, which means, blue comosable methods are the child of green composables and they can have their child composables. So if you want to have child you can create as many composable methods as you want.
+
+
+
+
    
 
 
