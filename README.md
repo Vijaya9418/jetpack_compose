@@ -28,6 +28,8 @@ for example:- If you want to show the list of names in a UI for that if we are u
 
    but now with the help of jetpack compose we dont have to depend on any xml to update something on UI as it follows. So an activity contains the list of compose functions which has some states, so if this state changes the whole compose layout rebuilds/ reconstructs.<br>
 
+3. It fixes whats broken and also updates old API's.<br>
+
 
    
 
