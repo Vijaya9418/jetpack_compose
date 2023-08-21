@@ -45,6 +45,22 @@ new Android UI System follows composition approach.
 
 In this approach, a composable can have child composable, which means, blue comosable methods are the child of green composables and they can have their child composables. So if you want to have child you can create as many composable methods as you want.
 
+**difference between inheritance and composable functions?**
+
+**inheritance:-** It is ** is a relationship** which means a parent can have only one child and a child can have only one parent which is a relationship.
+
+Ex:- editText ------> textView ------> View
+
+**Composable:-** It is **has a relationship** which means a parent can have as many chidlren as they want.
+
+Ex:- Composable function{(Composable function)(Composable function)}
+
+
+
+
+
+
+
 
 
 
