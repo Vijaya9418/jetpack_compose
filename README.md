@@ -56,6 +56,28 @@ Ex:- editText ------> textView ------> View
 Ex:- Composable function{(Composable function)(Composable function)}
 
 
+//this is a class<br>
+public class Person constructor(public val age: Int){
+
+//this is a method
+
+      public talk(){
+      val message:String
+      message = "This is a basics of kotlin $age"
+      println(message)
+      }
+      
+}
+
+fun main(args:Array<String>){
+
+val inputPerson: Person = Person(10)
+
+inputPerson.talk()
+
+}
+
+
 
 
 
