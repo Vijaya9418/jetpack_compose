@@ -51,7 +51,7 @@ In this approach, a composable can have child composable, which means, blue como
 
 Ex:- editText ------> textView ------> View
 
-**Composable:-** It is **has a relationship** which means a parent can have as many chidlren as they want. It is a new UI system
+**Composable:-** composition It is **has a relationship** which means a parent can have as many chidlren as they want. It is a new UI system
 
 Ex:- Composable function{(Composable function)(Composable function)}
 
