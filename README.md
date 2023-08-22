@@ -132,6 +132,91 @@ fun main(args: Array<String>){
 }
 
 
+**Jetpack compose is built on composables:-**
+
+Composable functions are the basic building blocks for declaring any UI components.
+
+
+
+class MainActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        /* why setContent does not have any paranthesis?
+        * because if we will go inside the setContent it has two parameters one is parent where its default value is already defined
+        * and second parameter is composable function which states that a function inside another function.
+        * so there is a rule in kotlin that if you are passing a function as a parameter and it is a last parameter so instead of using paranthesis we can directly use the curly braces.
+        */
+
+        setContent {
+            Jetpack_UI_basicsTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+
+                    //we can also pass the compsables directly here instead of greetings we can pass Text composable directly here
+
+                   // GreetingText("Android")
+                    GreetingButton()
+                }
+            }
+        }
+    }
+}
+
+/*
+it is a composable function which we created for setContent as it requires composable function
+we define this @Composable to any function or lambda to indicate that it can be used as a part of composition
+ */
+
+@Composable
+
+/*
+composable function name always starts with capital letter, because they are not standalone functions
+ they are viewed as widgets, components of the UI
+ */
+
+fun GreetingText(name: String, modifier: Modifier = Modifier) {
+
+    //this is also a composable function which we can add inside the composable function
+    //which means we can have composable functions inside functions
+
+    Text(
+            text = " Hello $name!",
+            modifier = modifier
+    )
+}
+
+
+@Composable
+fun GreetingButton(){
+
+     Button(onClick = { println("This is a button") }, modifier = Modifier
+         .width(180.dp)
+         .height(80.dp)) {
+         GreetingText(name = "button")
+         
+     }
+}
+
+/*
+Preview is used to display your UI in the right panel of your android studio which you have made through composable
+ So If we want to show any peview then we have to use a preview annotation , we should have a composable function
+ and inside that we should have the composable function similar to the function which we have used inside set content
+ */
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+
+    Jetpack_UI_basicsTheme {
+       // GreetingText("Android")
+
+        GreetingButton()
+    }
+}
+
+
 
 
 
