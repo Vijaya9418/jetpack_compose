@@ -79,6 +79,61 @@ inputPerson.talk()
 
 
 
+**Inheritance in kotlin:-**
+
+
+package com.example.jetpack_ui_basics
+
+//this is a class<br>
+//by default classes and methods are public and final in kotlin which means we cannot inherit or override those classes and methods.<br>
+// if we want to inherit the class and override the method we can use open keyword in front of them which will allow the inheritance and overriding.<br>
+
+public open class Person constructor(public val age: Int){
+
+//this is a method
+
+    public open fun talk(){
+        val message:String = "This is a person class $age"
+        println(message)
+    }
+
+}
+
+public final class Teacher constructor(age:Int): Person(age){
+
+    override fun talk(){
+        val message:String = "This is a teacher class $age"
+        println(message)
+    }
+    fun tech(){
+        println("I teach")
+    }
+
+}
+
+fun main(args: Array<String>){
+
+    //if we have declared any variable with val which means it cannot be modified once declared
+    //bucket can only be filled once.
+    
+    val inputPerson: Person = Person(10)
+
+    inputPerson.talk()
+
+    //if we have declared any variable with var which means it can be modified 
+    //bucket can be filled again and again
+    
+    var teacher = Teacher(20)
+    teacher.talk()
+    teacher.tech()
+
+    teacher = Teacher(40)
+    teacher.talk()
+}
+
+
+
+
 
 
 
