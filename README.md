@@ -217,6 +217,14 @@ fun GreetingPreview() {
 }
 
 
+**Core UI Elements of compose:-**
+
+surface composable -------> wrap content of composable -------> align composable -------> row,column,box composables ------>layouts with row and columns -----> extract composables for reuse ------> arrangements for rows and columns ------> combine and nest rows with columns.
+
+
+
+**Adding surface composables to the screen:-**
+
 
 
 
