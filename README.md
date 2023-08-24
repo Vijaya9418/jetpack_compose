@@ -242,7 +242,11 @@ for example:- onclick call back then it has to go through with the story widgets
 ![declarative apprach](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/150665c7-3ad9-4363-8780-43be5a11e3c3)
 
 
-Jetpack compose is based on dynamic concept, which means it can have different outputs if the given input values has changed
+Jetpack compose is based on dynamic concept, which means it can have different outputs if the given input values has changed.
+
+**Recomposition:-**
+
+It is a very imp topic because recomposition allows the whole UI to be rebuilt and the states to be changed. In the Imperitive approach we had some view, widgets to change their values but in jetpack compose we have recomposition, so whatever we will pass to the activity setcontent method, the parent composable will be rebuild, and then their child.So if the input will change then output will change.
 
 
 
