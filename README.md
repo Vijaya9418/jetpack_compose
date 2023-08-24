@@ -248,6 +248,26 @@ Jetpack compose is based on dynamic concept, which means it can have different o
 
 It is a very imp topic because recomposition allows the whole UI to be rebuilt and the states to be changed. In the Imperitive approach we had some view, widgets to change their values but in jetpack compose we have recomposition, so whatever we will pass to the activity setcontent method, the parent composable will be rebuild, and then their child.So if the input will change then output will change.
 
+**State:-**
+
+State in jetpack compose is the heart of UI construction it allows us to update the UI . It is a part of recomposition.In order to trigger the recomposition we should have state.
+It is any value that can change over time.
+
+Our dataflow is unidirectional:-
+Event<br>
+Update state<br>
+Display state<br>
+
+![state in jetpack compose](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/856d6e73-49d4-4e58-be62-cca746c98df2)
+
+to update the list we can use the state which is mutableStateListOf which will update the list on button ckick<br>.
+Now we dont want to lose the updated list so we will use remmber which is a special block which will allow the state will be remmembered over recomposition.
+
+
+
+
+
+
 
 
 
