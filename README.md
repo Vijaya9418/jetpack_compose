@@ -266,6 +266,25 @@ Now we dont want to lose the updated list so we will use remmber which is a spec
 
 
 
+ViewModel:-
+
+It is a class that is responsible for preparing and managing the state of UI for Fragments and Activities.
+
+![ViewModel in jetpack compose](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/49881e00-3459-4b54-bd2d-b8b76d78d58f)
+
+
+LiveData:-
+
+It is a lifecycle-aware observables data holder. which means it holds some data(lists,mutable lists) but is more reactive of nature, it react to the changes.
+
+for example:- we have fragments and activities and we are using live data, so live data will observe the value and will notify the activities or fragments thgat their is a change, so they will continuesly gets the update whenever their is a change.
+
+
+![live data](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/eeaa2e4e-2b56-4aac-97af-a5eaaba85c62)
+
+
+
+
 
 
 
