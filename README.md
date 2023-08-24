@@ -231,11 +231,18 @@ In this data flows from top to bottom. Screen --> NewsFeed --> Story Widget.
 
 for example:- If user is interacting with the UI and giving some input, then it will first go to the screen, then newsfeed and then inside hidden files story widgets.
 
+
+![data declarative appraoch](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/f6252703-6361-4ebf-8061-d21b5d0424ad)
+
+
 And In case of events it flows from bottom to top. Screen <-- NewsFeed <-- Story Widget.
 
 for example:- onclick call back then it has to go through with the story widgets and then news feed widget and then to the screen composable.
 
 ![declarative apprach](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/150665c7-3ad9-4363-8780-43be5a11e3c3)
+
+
+Jetpack compose is based on dynamic concept, which means it can have different outputs if the given input values has changed
 
 
 
