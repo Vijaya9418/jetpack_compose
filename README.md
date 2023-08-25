@@ -283,6 +283,15 @@ for example:- we have fragments and activities and we are using live data, so li
 ![live data](https://github.com/Vijaya9418/jetpack_compose/assets/56352158/eeaa2e4e-2b56-4aac-97af-a5eaaba85c62)
 
 
+**LazyColumn:-**
+
+It is similar to the recycler view which helps you to display the column in the form of a list and recyle or reuse its item, which saves its memory.
+
+Lets suppose we have a list of items and if we are using list view it will load all those 100 items and which will not be fast and it will take lot of memory, but if we will use lazy column then it will load only those items which is visiblw in the UI and then if we want to load another items we can scroll it and it will load.
+
+It is helpful in dynamic loading of data.
+
+
 
 
 
