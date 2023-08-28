@@ -291,6 +291,12 @@ Lets suppose we have a list of items and if we are using list view it will load 
 
 It is helpful in dynamic loading of data.
 
+Composable screen:-
+
+Composable screens are lightweight UI just like the fragments, which we can add in a single activity and have multiple composable screen.
+
+Navigation component:-
+
 
 
 
