@@ -299,6 +299,18 @@ Navigation component:-
 
 https://github.com/Vijaya9418/Navigation-in-android
 
+**what is remember and state function in jetpack compose?**
+
+    we use remember function to retain and manage the state within composable function, this is useful when you want to store and manage some local state within the composable it will remember the state for example you have a mutable state of list - vijaya and gaurav and a textfield in which we are adding the value Geet now for the time it will be get addedand visible to your screen but when the recomposition will takes place then that data will be lost that geet field will not be get added it will reset to its initial value
+
+
+    a state is any value that can change over time, so if want to add any new value in the list of item
+     we will use mutablestateof, when the values changes the recomposition will happen and Ui will be updated
+
+    val rememberedMeals: MutableState<List<MealsResponse>> = remember {
+        mutableStateOf(emptyList<MealsResponse>())
+    }
+
 
 
 
